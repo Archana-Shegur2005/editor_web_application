@@ -1,0 +1,10 @@
+// App-level styles
+// The main layout lives in PaginatedEditor.scss.
+// This file handles root-level App shell styles.
+
+.App {
+  // Full-height shell — PaginatedEditor takes over the viewport
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

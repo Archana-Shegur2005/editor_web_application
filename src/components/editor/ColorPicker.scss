@@ -1,0 +1,45 @@
+.color-picker {
+  padding: 8px;
+  width: 208px;
+
+  &__label {
+    font-size: 0.75rem;
+    color: hsl(var(--muted-foreground));
+    margin-bottom: 8px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 2px;
+  }
+
+  &__swatch {
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    border: 1px solid hsl(var(--border));
+    cursor: pointer;
+    transition: transform 0.15s ease;
+    padding: 0;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__remove {
+    margin-top: 8px;
+    width: 100%;
+    font-size: 0.75rem;
+    color: hsl(var(--muted-foreground));
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px 0;
+
+    &:hover {
+      color: hsl(var(--foreground));
+    }
+  }
+}

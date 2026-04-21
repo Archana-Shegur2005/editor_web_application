@@ -1,0 +1,34 @@
+.table-grid-selector {
+  padding: 8px;
+
+  &__label {
+    font-size: 0.75rem;
+    color: hsl(var(--muted-foreground));
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
+  &__grid {
+    display: grid;
+    gap: 2px;
+  }
+
+  &__cell {
+    width: 20px;
+    height: 20px;
+    border: 1px solid hsl(var(--border));
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: hsl(var(--card));
+    transition: border-color 0.1s ease, background-color 0.1s ease;
+
+    &:hover {
+      border-color: hsl(var(--muted-foreground));
+    }
+
+    &--highlighted {
+      background-color: hsl(var(--primary) / 0.3);
+      border-color: hsl(var(--primary));
+    }
+  }
+}
